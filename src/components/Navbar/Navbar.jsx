@@ -15,26 +15,31 @@ const Navbar = () => {
             <ul className="nav__list">
                 <li className="nav__list-item">
                     <a href="#About">
-                        About
+                        about
                     </a>
                 </li>
                 <li className="nav__list-item">
                   <a href="#Projects">
-                  Projects
-                  </a>
+                  projects
+                    </a>
                   
                 </li>
                 <li className="nav__list-item">
                   <a href="#Contact">
-                  Contact
+                    contact
                   </a>
                   
                 </li>
             </ul>
-            <button>Toggle</button>
+            <button
+              type="button"
+            >
+              Toggle
+            </button>
             <button
               type="button"
               onClick={toggleNavList}
+              className="nav__hamburger"
               aria-label='toggle navigation'
             >
               {showNavList ? <IoMdClose /> : <IoMdMenu />}

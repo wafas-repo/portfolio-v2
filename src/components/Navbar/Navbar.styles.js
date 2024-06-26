@@ -1,16 +1,7 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    box-shadow: none;
-    box-sizing: border-box;
+ 
 `;
 
 export const Content = styled.div`
@@ -24,6 +15,10 @@ export const Content = styled.div`
     .centre {
         display: flex;
         align-items: center;
+    }
+
+    .nav__hamburger {
+        display: none;
     }
 
     .nav__list {
