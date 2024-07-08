@@ -4,7 +4,7 @@ const Header = () => (
   <Wrapper>
     <Content>
       <h3>
-        <a href="">WQ.</a>
+        <a className="link" href="">WQ.</a>
       </h3>
       <Navbar />
     </Content>

@@ -30,6 +30,12 @@ export const Content = styled.div`
         margin-left: 1.5em;
     }
 
+    .link--nav {
+        color: var(--clr-fg);
+        text-transform: lowercase;
+        font-weight: 500;
+    }
+
     @media (max-width: 600px) {
         .nav__list {
             display: none;

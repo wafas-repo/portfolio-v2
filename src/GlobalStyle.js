@@ -16,11 +16,31 @@ export const GlobalStyle = createGlobalStyle`
         
     }
 
+    .light {
+        --clr-bg: #fcfcfc;
+        --clr-bg-alt: #fff;
+        --clr-fg: #555;
+        --clr-fg-alt: #444;
+        --clr-primary: #b029b5;
+        --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .dark {
+        --clr-bg: #23283e;
+        --clr-bg-alt: #2a2f4c;
+        --clr-fg: #bdbddd;
+        --clr-fg-alt: #cdcdff;
+        --clr-primary: #90a0d9;
+        --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+
     body {
         font-family: "Poppins", sans-serif;
         line-height: 1.5;
-        /* color: var(--clr-fg);
-        background-color: var(--clr-bg); */
+        color: var(--clr-fg);
+        background-color: var(--clr-bg);
         max-width: 1100px;
         width: 95%;
         margin: 0 auto;
@@ -35,6 +55,16 @@ export const GlobalStyle = createGlobalStyle`
         text-transform: lowercase;
         transition: transform 0.2s ease-in-out;
 
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .section__title {
+        text-align: center;
+        margin-bottom: 1em;
+        text-transform: uppercase;
     }
 
     h1,
@@ -76,6 +106,48 @@ export const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    .link {
+        color: var(--clr-primary);
+        padding: 0 0 0.3em 0;
+        position: relative;
+    }
+
+    .link:hover {
+        color: var(--clr-primary);
+    }
+
+     .link::before {
+        content: "";
+        display: inline;
+        width: 0%;
+        height: 0.2em;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--clr-primary);
+        transition: width 0.2s ease-in;
+    }
+
+    .link:hover::before,
+    .link:focus::before {
+        width: 100%;
+    }
+
+
+    .link--icon {
+        color: var(--clr-fg);
+        font-size: 2rem;
+    }
+
+    
+
+    
+
+
+    
+
+   
+    
 
     @media (max-width: 900px) {
         h1 {

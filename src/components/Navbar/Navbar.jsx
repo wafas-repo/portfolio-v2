@@ -14,18 +14,18 @@ const Navbar = () => {
         <nav className="centre">
             <ul className="nav__list">
                 <li className="nav__list-item">
-                    <a href="#About">
+                    <a className="link link--nav" href="#about">
                         about
                     </a>
                 </li>
                 <li className="nav__list-item">
-                  <a href="#Projects">
+                  <a className="link link--nav" href="#projects">
                   projects
                     </a>
                   
                 </li>
                 <li className="nav__list-item">
-                  <a href="#Contact">
+                  <a className="link link--nav" href="#contact">
                     contact
                   </a>
                   

@@ -47,4 +47,8 @@ const PROJECTS = [
 
 ]
 
-export { ABOUT_INFO, PROJECTS }
+const CONTACT = {
+    email: 'wafa.qazi@outlook.com',
+}
+
+export{ ABOUT_INFO, PROJECTS, CONTACT }

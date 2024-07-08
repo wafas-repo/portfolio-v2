@@ -25,11 +25,15 @@ export const Content = styled.div`
         margin-bottom: 2.4em;
     }
 
+    .about__name {
+        color: var(--clr-primary);
+    }
+
     .about .link--icon {
         margin-right: 0.8em;
     }
 
-    .link--icon {
+    .about.link--icon {
         font-size: 2rem;
     }
 
@@ -37,12 +41,6 @@ export const Content = styled.div`
         margin-top: 2rem;
         display: flex;
         flex-direction: row;
-    }
-
-    .section__title {
-        text-align: center;
-        margin-bottom: 1em;
-        text-transform: uppercase;
     }
 
     .about-text p {
@@ -75,7 +73,7 @@ export const Content = styled.div`
     }
 
     .btn--plain:hover {
-    transform: translateY(-4px);
+        transform: translateY(-4px);
     }
 
 
