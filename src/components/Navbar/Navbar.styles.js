@@ -46,17 +46,25 @@ export const Content = styled.div`
     }
 
     @media (max-width: 600px) {
+
         .nav__list {
-            display: none;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            position: fixed;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
+            padding: 4em 0;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 5em;
+            background-color: var(--clr-bg);
+            width: 0;
+            overflow: hidden;
+            transition: width 0.2s ease-in-out;
         }
+
+        .display-nav-list {
+            width: 100%;
+        }
+        
 
         .nav__list-item {
             margin: 0.5em 0;
@@ -64,7 +72,6 @@ export const Content = styled.div`
 
         .nav__hamburger {
             display: flex;
-            z-index: 2;
             margin-left: 0.8em;
         }
 

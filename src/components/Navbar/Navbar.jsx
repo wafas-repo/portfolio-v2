@@ -12,15 +12,13 @@ const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
   const { themeName, toggleTheme } = useContext(ThemeContext);
 
-
-
   const toggleNavList = () => setShowNavList(!showNavList)
 
   return (
     <Wrapper>
       <Content>
         <nav className="centre">
-            <ul className="nav__list">
+            <ul style={{ display: showNavList ? 'flex' : 'none' }} className="nav__list display-nav-list">
                 <li className="nav__list-item">
                     <a className="link link--nav" href="#about">
                         about
