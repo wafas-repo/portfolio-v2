@@ -62,7 +62,7 @@ export const Content = styled.div`
             margin: 0.5em 0;
         }
 
-        .app .nav__hamburger {
+        .nav__hamburger {
             display: flex;
             z-index: 2;
             margin-left: 0.8em;

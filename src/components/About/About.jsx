@@ -80,7 +80,10 @@ const About = () => {
                 </div>
 
                 <div className="about-container">
-                    <Image src={MyImage} />
+                    <div className="about-img">
+                        <Image src={MyImage} />
+                    </div>
+                    
                     <div className="about-text">
                         <p> My name is Wafa Qazi. I am a recent graduate of 2021 from the University of Guelph, with a degree in Computer Science. I have 
                             great interest in full-stack development along with human computer interactions and UI/UX design.

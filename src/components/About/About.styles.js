@@ -9,6 +9,13 @@ export const Wrapper = styled.div`
         margin-top: 5em;
         height: 70vh;
     }
+
+    @media (max-width: 600px) {
+        .about {
+            align-items: flex-start;
+            margin-top: 2em;
+        }
+    }
     
 `;
 
@@ -75,6 +82,44 @@ export const Content = styled.div`
     .btn--plain:hover {
         transform: translateY(-4px);
     }
+
+    @media (max-width: 600px) {
+        .about-container {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+            .about-text p {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .skills__list {
+            margin-left: 0 !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about-img{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+
+    
 
 
 

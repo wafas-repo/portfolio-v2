@@ -1,6 +1,6 @@
 import { Wrapper, Content } from "./Navbar.styles"
 import { useState } from "react"
-import { IoMdMenu } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { ThemeContext } from "../../Contexts/theme";
 import { useContext } from "react";
@@ -50,10 +50,10 @@ const Navbar = () => {
             <button
               type="button"
               onClick={toggleNavList}
-              className="nav__hamburger"
+              className="btn btn--icon nav__hamburger"
               aria-label='toggle navigation'
             >
-              {showNavList ? <IoMdClose /> : <IoMdMenu />}
+              {showNavList ? <IoMdClose /> : <GiHamburgerMenu />}
             </button>
             
         </nav>
