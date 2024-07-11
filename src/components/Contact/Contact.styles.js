@@ -24,8 +24,8 @@ export const Button = styled.button`
     
 
     .btn--outline {
-        color: #b029b5;
-        border: 2px solid #b029b5;
+        color: var(--clr-primary);
+        border: 2px solid var(--clr-primary);
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -39,7 +39,7 @@ export const Button = styled.button`
     .btn--outline:before {
     content: "";
         position: absolute;
-        background-color: #b029b5;
+        background-color: var(--clr-primary);
         right: 100%;
         bottom: 0;
         left: 0;

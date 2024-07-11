@@ -67,7 +67,7 @@ export const Content = styled.div`
         text-transform: initial;
         background-color: var(--clr-bg-alt);
         box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-        border: solid 1px #b029b5;
+        border: solid 1px var(--clr-primary);
         border-radius: 10px;
         
     }
@@ -86,8 +86,8 @@ export const Button = styled.button`
     
 
     .btn--outline {
-        color: #b029b5;
-        border: 2px solid #b029b5;
+        color: var(--clr-primary);
+        border: 2px solid var(--clr-primary);
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -101,7 +101,7 @@ export const Button = styled.button`
     .btn--outline:before {
     content: "";
         position: absolute;
-        background-color: #b029b5;
+        background-color: var(--clr-primary);
         right: 100%;
         bottom: 0;
         left: 0;

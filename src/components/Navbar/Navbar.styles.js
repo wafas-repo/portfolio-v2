@@ -36,6 +36,15 @@ export const Content = styled.div`
         font-weight: 500;
     }
 
+    .nav__theme {
+        margin-top: 0.4em;
+    }
+
+    .btn--icon {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
     @media (max-width: 600px) {
         .nav__list {
             display: none;
@@ -51,6 +60,12 @@ export const Content = styled.div`
 
         .nav__list-item {
             margin: 0.5em 0;
+        }
+
+        .app .nav__hamburger {
+            display: flex;
+            z-index: 2;
+            margin-left: 0.8em;
         }
 
 }

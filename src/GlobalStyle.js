@@ -14,7 +14,10 @@ export const GlobalStyle = createGlobalStyle`
         box-shadow: none;
         box-sizing: border-box;
         
+        
     }
+
+    
 
     .light {
         --clr-bg: #fcfcfc;
@@ -44,6 +47,15 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1100px;
         width: 95%;
         margin: 0 auto;
+        
+    }
+
+    .app {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        color: var(--clr-fg);
+        background-color: var(--clr-bg);
+        
     }
 
     .btn {
@@ -72,7 +84,7 @@ export const GlobalStyle = createGlobalStyle`
     h3,
     h4 {
     line-height: 1.2;
-    /* color: var(--clr-fg-alt); */
+    color: var(--clr-fg-alt);
     }
 
     html {

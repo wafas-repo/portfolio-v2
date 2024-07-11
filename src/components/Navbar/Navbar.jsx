@@ -2,9 +2,17 @@ import { Wrapper, Content } from "./Navbar.styles"
 import { useState } from "react"
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import { ThemeContext } from "../../Contexts/theme";
+import { useContext } from "react";
+import { FaSun } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
+
 
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
+  const { themeName, toggleTheme } = useContext(ThemeContext);
+
+
 
   const toggleNavList = () => setShowNavList(!showNavList)
 
@@ -33,8 +41,11 @@ const Navbar = () => {
             </ul>
             <button
               type="button"
+                onClick={toggleTheme}
+                className='btn btn--icon nav__theme'
+                aria-label='toggle theme'
             >
-              Toggle
+              {themeName === 'dark' ? <FaSun /> : <FaMoon />}
             </button>
             <button
               type="button"
