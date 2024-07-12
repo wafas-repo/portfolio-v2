@@ -8,6 +8,7 @@ import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 
 
+
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
   const { themeName, toggleTheme } = useContext(ThemeContext);
@@ -18,7 +19,7 @@ const Navbar = () => {
     <Wrapper>
       <Content>
         <nav className="centre">
-            <ul style={{ display: showNavList ? 'flex' : 'none' }} className="nav__list display-nav-list">
+            <ul className={`nav__list ${showNavList ? 'display-nav-list' : ''}`}>
                 <li className="nav__list-item">
                     <a className="link link--nav" href="#about">
                         about

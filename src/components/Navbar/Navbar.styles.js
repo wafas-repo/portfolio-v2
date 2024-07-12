@@ -23,7 +23,7 @@ export const Content = styled.div`
 
     .nav__list {
         margin-right: 1.5em;
-        display: flex;
+        display: none;
     }
 
     .nav__list-item {
@@ -48,6 +48,7 @@ export const Content = styled.div`
     @media (max-width: 600px) {
 
         .nav__list {
+            display: flex !important;
             flex-direction: column;
             align-items: center;
             padding: 4em 0;
