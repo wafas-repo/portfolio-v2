@@ -4,9 +4,7 @@ export const Wrapper = styled.div`
     padding: 2em;
     margin: 0 auto;
     text-align: center;
-    border: solid 1px var(--clr-primary);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
-     transition: transform 0.5s ease-in-out; /* Adjusted duration and timing function */
+   
    
 
    

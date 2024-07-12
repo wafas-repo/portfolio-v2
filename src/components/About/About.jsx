@@ -4,12 +4,13 @@ import { FaEnvelope } from "react-icons/fa";
 import { ABOUT_INFO } from "../../information";
 import PropTypes from 'prop-types';
 import MyImage from '../../images/photo.jpeg'
+import resume from '../../assets/wqazi_resume.pdf';
 
 import { Wrapper, Content, Button, Image} from "./About.styles";
 
 const About = () => {
 
-  const { name, role, resume, social } = ABOUT_INFO
+  const { name, role, social } = ABOUT_INFO
 
   return (
     <Wrapper>
@@ -30,6 +31,8 @@ const About = () => {
                     {social.github && (
                     <a
                         href={social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label='github'
                         className='link link--icon'
                     >
@@ -40,6 +43,8 @@ const About = () => {
                     {social.linkedin && (
                     <a
                         href={social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label='linkedin'
                         className='link link--icon'
                     >
@@ -62,7 +67,7 @@ const About = () => {
                 <div className="resume_btn_container">
                     {resume && (
                         <Button>
-                            <a href={resume}>
+                            <a href={resume} download="resume.pdf">
                                 
                                 <span type='button' className=' btn btn--outline' >
                                     resume
