@@ -1,3 +1,7 @@
+import CVBuilderImage from './assets/images/CVBuilder.jpg'
+import MeloFileImage from './assets/images/MeloFile.jpg';
+import NetworkImage from './assets/images/Network.jpg';
+
 const ABOUT_INFO = {
     name: 'Wafa Qazi',
     role: 'Software Developer',
@@ -19,6 +23,7 @@ const PROJECTS = [
         stack: ['JavaScript ES6', 'React JS', 'HTML/CSS'],
         sourceCode: 'https://github.com/wafas-repo/cv-builder',
         livePreview: 'https://react-cv-builder.netlify.app',
+        image: CVBuilderImage,
     },
     {
         name: 'MeloFile',
@@ -27,6 +32,7 @@ const PROJECTS = [
         stack: ['HTML/CSS', 'JavaScript', 'Python', 'Django', 'Postgresql'],
         sourceCode: 'https://github.com/wafas-repo/MeloFile',
         livePreview: 'https://melo-file.vercel.app/',
+        image: MeloFileImage,
     },
     {
         name: 'Network',
@@ -35,14 +41,15 @@ const PROJECTS = [
         stack: ['HTML/CSS', 'JavaScript', 'Python', 'Django'],
         sourceCode: 'https://github.com/wafas-repo/Network',
         livePreview: 'https://network-fa3hdjq73-wafaqazis-projects.vercel.app/',
+        image: NetworkImage,
     },
     {
         name: 'C- Compiler',
         description:
         ' Developed a compiler for made up language ”C‑”. C- test files provided [0123456789].cm, however any C- program files will work',
         stack: ['JFlex', 'CUP', 'Java', 'Flex'],
-        sourceCode: 'https://github.com',
-        livePreview: 'https://github.com',
+        sourceCode: 'https://github.com/wafas-repo/Code-Generator',
+        livePreview: '',
     }
 
 ]

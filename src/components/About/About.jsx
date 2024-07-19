@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { ABOUT_INFO } from "../../information";
 import PropTypes from 'prop-types';
-import MyImage from '../../images/photo.jpeg'
+import MyImage from '../../assets/images/photo.jpeg'
 import resume from '../../assets/wqazi_resume.pdf';
 
 import { Wrapper, Content, Button, Image} from "./About.styles";

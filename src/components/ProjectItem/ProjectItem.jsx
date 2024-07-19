@@ -58,6 +58,7 @@ ProjectItem.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.string.isRequired,
     sourceCode: PropTypes.string.isRequired,
     livePreview: PropTypes.string.isRequired,
   }).isRequired,

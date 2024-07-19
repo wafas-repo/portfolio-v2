@@ -31,7 +31,7 @@ export const Content = styled.div`
   .link--nav {
     color: var(--clr-fg);
     text-transform: lowercase;
-    font-weight: 500;
+    font-weight: 500 !important;
   }
 
   .nav__theme {
@@ -41,6 +41,11 @@ export const Content = styled.div`
   .btn--icon {
     padding: 0;
     font-size: 1.2rem;
+  }
+
+  .btn--icon:hover,
+  .btn--icon:focus {
+    color: var(--clr-primary);
   }
 
   @media (max-width: 600px) {

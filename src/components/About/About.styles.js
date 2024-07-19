@@ -70,6 +70,10 @@ export const Content = styled.div`
         margin: 0.5em;
     }
 
+    .resume_btn_container {
+        margin-right: 1em;
+    }
+
     .btn--plain {
         text-transform: initial;
         background-color: var(--clr-bg-alt);

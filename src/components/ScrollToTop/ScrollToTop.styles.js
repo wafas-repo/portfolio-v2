@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
     background-color: transparent;
     font-size: 30px;
 
+    a {
+        color: inherit;
+    }
+
     @media (max-width: 900px) {
         .scroll-top {
             display: none;

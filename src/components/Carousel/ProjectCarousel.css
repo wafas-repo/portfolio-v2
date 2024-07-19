@@ -1,0 +1,62 @@
+.carousel.slide {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    
+}
+
+.carousel-inner {
+    border-radius: 24px;
+    border: solid 1px var(--clr-primary);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.carousel-indicators .active {
+    background-color: var(--clr-primary);
+}
+
+.carousel-inner:hover {
+    transform: scale(1.01);
+}
+
+.carousel img {
+    object-fit: contain;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    top: 15rem;
+    padding-bottom: 60px;
+    max-width: 500px;
+    right: unset !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    user-select: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+.carousel-caption h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    color: var(--cap-clr);
+    
+}
+
+.carousel-caption p.techStack {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--clr-primary);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .carousel {
+        display: none;
+    }
+}
