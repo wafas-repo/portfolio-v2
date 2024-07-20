@@ -3,8 +3,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { ABOUT_INFO } from "../../information";
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import { gsap } from 'gsap';
+import { ThemeContext } from "../../Contexts/theme";
 
 import resume from '../../assets/wqazi_resume.pdf';
 
@@ -13,6 +14,14 @@ import { Wrapper, Content, Button} from "./About.styles";
 const About = () => {
 
   const { name, role, social } = ABOUT_INFO
+  const { themeName } = useContext(ThemeContext);
+
+  console.log('Theme', themeName)
+
+  const bgStyle = {
+    fill: themeName === "dark" ? '#90a0d9' : '#c250d5',  // Dark mode vs. light mode color
+    fillOpacity: 1,
+  };
 
   useEffect(() => {
     const safeToAnimate = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
@@ -182,7 +191,7 @@ const About = () => {
                                 d="M39 153.73s31.57 19.71 77.26 15.21 90.18-37.23 90.36-72.33-10.51-57-35.28-63-50.22 17-76.31 20-60.12-15.88-78.32 2.51S-4.88 125.2 39 153.73z"
                                 fill="rgb(111, 220, 191)"
                                 id="path8"
-                                style={{ fill: '#c250d5', fillOpacity: 1 }}
+                                style={bgStyle}
                                 />
                                 <g clipPath="url(#background-clip)">
                                 <g className="me">
