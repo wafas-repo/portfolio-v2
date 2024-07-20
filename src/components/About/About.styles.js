@@ -87,6 +87,19 @@ export const Content = styled.div`
         transform: translateY(-4px);
     }
 
+    .about-img svg {
+        flex-shrink: 0;
+        width: 500px;
+        max-width: 90vw;
+    }
+
+    .screen-log {
+        padding-top: 1rem;
+        text-align: center;
+        color: black;
+        display: none;
+    }
+
     @media (max-width: 600px) {
         .about-container {
             margin-top: 2rem;
@@ -163,11 +176,5 @@ export const Button = styled.button`
     .btn--outline:focus::before {
         right: 0;
     }
-
-`;
-
-export const Image = styled.img`
-    height: 400px;
-    border-radius: 0.8rem;
 
 `;
