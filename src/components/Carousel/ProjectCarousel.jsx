@@ -27,6 +27,7 @@ const ProjectCarousel = ({ project }) => {
                 href={project.sourceCode}
                 aria-label='source code'
                 className='link link--icon'
+                target='_blank' 
             >
                 <FaGithub />
             </a>
@@ -34,6 +35,7 @@ const ProjectCarousel = ({ project }) => {
                 href={project.livePreview}
                 aria-label='live preview'
                 className='link link--icon'
+                target='_blank' 
             >
                 <MdLaunch />
             </a>
