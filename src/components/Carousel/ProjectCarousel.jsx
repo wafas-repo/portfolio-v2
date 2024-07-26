@@ -9,7 +9,7 @@ import './ProjectCarousel.css'
 const ProjectCarousel = ({ project }) => {
   return (
     <Carousel>
-      {project.slice(0,3).map((project, index) => (
+      {project.slice(0,4).map((project, index) => (
         <Carousel.Item key={index} interval={5000}>
           <img
             className="d-block w-100"

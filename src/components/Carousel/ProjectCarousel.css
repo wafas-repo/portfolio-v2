@@ -11,10 +11,6 @@
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
-.carousel-indicators .active {
-    background-color: var(--clr-primary);
-}
-
 .carousel-inner:hover {
     transform: scale(1.01);
 }
@@ -35,6 +31,11 @@
     text-align: center;
     background-color: transparent;
 }
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--clr-fg)!important;
+}
+
 
 .carousel-caption h3 {
     font-size: 2em;

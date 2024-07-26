@@ -1,6 +1,7 @@
 import CVBuilderImage from './assets/images/CVBuilder.jpg'
 import MeloFileImage from './assets/images/MeloFile.jpg';
 import NetworkImage from './assets/images/Network.jpg';
+import MemoryCardImage from './assets/images/MemoryCard.jpg'
 
 const ABOUT_INFO = {
     name: 'Wafa Qazi',
@@ -20,7 +21,7 @@ const PROJECTS = [
         name: 'CV Builder',
         description:
         'Designed a web app that allows users to enter information to generate a simple resume.',
-        stack: ['JavaScript ES6', 'React JS', 'HTML/CSS'],
+        stack: ['JavaScript ES6', 'React.js', 'HTML/CSS'],
         sourceCode: 'https://github.com/wafas-repo/cv-builder',
         livePreview: 'https://react-cv-builder.netlify.app',
         image: CVBuilderImage,
@@ -42,6 +43,14 @@ const PROJECTS = [
         sourceCode: 'https://github.com/wafas-repo/Network',
         livePreview: 'https://network-fa3hdjq73-wafaqazis-projects.vercel.app/',
         image: NetworkImage,
+    },
+    {
+        name: 'Memory Card',
+        description: 'An Avatar: The Last Airbender themed memory game.',
+        stack: ['Javascript ES6', 'React.js'],
+        sourceCode: 'https://github.com/wafas-repo/memory-card',
+        livePreview: 'https://memory-card-atla.netlify.app/',
+        image: MemoryCardImage,
     },
     {
         name: 'C- Compiler',
