@@ -381,11 +381,6 @@ const About = () => {
                             <li className="skills__list-item btn btn--plain">JavaScript ES6+</li>
                             <li className="skills__list-item btn btn--plain">Python</li>
                             <li className="skills__list-item btn btn--plain">Django</li>
-                            <li className="skills__list-item btn btn--plain">C</li>
-        
-                        </ul>
-                        <p>Here are some technologies I am currently learning:</p>
-                        <ul className="skills__list">
                             <li className="skills__list-item btn btn--plain">React JS</li>
                             <li className="skills__list-item btn btn--plain">TypeScript</li>
                         </ul>

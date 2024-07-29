@@ -53,6 +53,15 @@ const PROJECTS = [
         image: MemoryCardImage,
     },
     {
+        name: 'RDMB',
+        description: 'A Movie Database that displays information on movies.',
+        stack: ['Javascript ES6', 'React.js', 'Typescript'],
+        sourceCode: 'https://github.com/wafas-repo/react-rmdb',
+        livePreview: 'https://movie-react-db.netlify.app',
+        image: '',
+
+    },
+    {
         name: 'C- Compiler',
         description:
         ' Developed a compiler for made up language ”C‑”. C- test files provided [0123456789].cm, however any C- program files will work',
