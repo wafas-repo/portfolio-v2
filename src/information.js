@@ -41,7 +41,7 @@ const PROJECTS = [
         'Designed a social networking website inspired by twitter that allows users to post and follow other users.',
         stack: ['HTML/CSS', 'JavaScript', 'Python', 'Django'],
         sourceCode: 'https://github.com/wafas-repo/Network',
-        livePreview: 'https://network-fa3hdjq73-wafaqazis-projects.vercel.app/',
+        livePreview: 'https://network-7cv0erplz-wafaqazis-projects.vercel.app/',
         image: NetworkImage,
     },
     {
@@ -53,7 +53,7 @@ const PROJECTS = [
         image: MemoryCardImage,
     },
     {
-        name: 'RDMB',
+        name: 'RMDB',
         description: 'A Movie Database that displays information on movies.',
         stack: ['Javascript ES6', 'React.js', 'Typescript'],
         sourceCode: 'https://github.com/wafas-repo/react-rmdb',
